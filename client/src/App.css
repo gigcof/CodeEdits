@@ -1,0 +1,21 @@
+.playground-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.editor-container {
+  min-height: 70vh;
+  display: flex;
+}
+
+.files {
+  padding: 20px;
+}
+
+li {
+  list-style: none;
+}
+
+.file-node {
+  cursor: pointer;
+}
