@@ -19,7 +19,10 @@ app.use(cors({
 }))
 const server = http.createServer(app);
 const io = new SocketServer({
-    cors: '*'
+    cors: {
+        origin: '*',
+        methods: ['GET', 'POST']
+    }
 });
 io.attach(server);
 
